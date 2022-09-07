@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+@import "./css/Nav.css";
+@import "./css/bootstrap.min.css";
+@import "./css/Home.css";
+@import "./css/About.css";
+@import "./css/Contact.css";
+@import "./css/Footer.css";
+
+:root {
+  /* Containers Sizes */
+  --max-width-nav: 950px;
+  /* Colors */
+  --color-bg: #001220;
+  --color-bg-text: #fff;
+  --color-bg-text-opac: rgba(255, 255, 255, 0.25);
+  --color-bg-text-opac-hover: rgba(255, 255, 255, 0.4);
+  --color-bg-dark-opac: rgba(100, 100, 111, 0.3);
+  --color-dark: #212121;
+  --color-dark-hover: #4b4b4b;
+  --color-dark-opac: rgba(58, 58, 58, 0.48);
+  --color-fixed-dark-opac: rgba(58, 58, 58, 0.48);
+
+  --color-fixed-text-light: #fff;
+  --color-fixed-bg-text-light-opac: rgba(255, 255, 255, 0.25);
+  --color-fixed-dark-opac: rgba(58, 58, 58, 0.48);
+  --color-design-1: #8e6cc0;
+  --color-design-1-hover: #aa90cf;
+  --color-design-1-opac: rgba(170, 144, 207, 0.9);
+  --color-design-2: #004dff;
+  --color-design-2-hover: #467bf8;
+  --color-design-3: #00b22d;
+  --color-design-3-hover: #00db37;
+  --color-design-text: #fff;
+
+  --bs-noree: #f29c9b;
+}
+.light {
+  --color-bg: rgb(248, 248, 248);
+  --color-bg-text: #000;
+  --color-bg-text-opac: rgba(252, 252, 252, 0.25);
+  --color-bg-text-opac-hover: rgba(252, 252, 252, 0.4);
+
+  --color-dark: #e0e0e0;
+  --color-dark-hover: #b8b8b8;
+  --color-dark-opac: rgba(180, 180, 180, 0.162);
+  --color-design-1: #a58cc9;
+  --color-design-1-hover: #815eb3;
+  --color-design-2: #2b6aff;
+  --color-design-2-hover: #5f8efa;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Button Groups */
+.btn--color-design-1 {
+  color: var(--color-design-text);
+  background-color: var(--color-design-1);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn--color-design-1:hover {
+  color: var(--color-design-text);
+  background-color: var(--color-design-1-hover);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-light-success {
+  color: var(--color-design-text);
+  background-color: var(--color-design-3);
+}
+.btn-light-success:hover {
+  color: var(--color-design-text);
+  background-color: var(--color-design-3-hover);
+}
+/* Project Colors */
+.btn-noree {
+  background-color: #f29c9b;
+  color: #fff;
+}
+.btn-noree:hover {
+  background-color: #ff908e;
+  color: #fff;
+}
+/* Global CSS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: 0.2s ease;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+#root .app-wrapper {
+  min-height: 110vh;
+  min-width: 100%;
+  overflow-x: hidden;
+  background-color: var(--color-bg);
+  color: var(--color-bg-text);
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
-  align-items: center;
+}
+/* Loading Screen */
+.LoadingScreen{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: var(--color-fixed-bg-text-light-opac);
+  top: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.lds-ellipsis div {
+  position: absolute;
+  top: 33px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    transform: scale(1);
   }
 }
+
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  100% {
+    transform: translate(24px, 0);
+  }
+}
+/* 
+
+
+
+TODO: Use this site for converting dark colours to light colours: 
+https://www.colortools.net/color_complementary.html 
+*/

@@ -1,0 +1,94 @@
+{
+  "Languages": [
+    {
+      "ObjectId": 0,
+      "ObjectTitle": "Code Languages",
+      "Content": [
+        {
+          "id": 0,
+          "Name": "Javascript",
+          "Image": "https://i.ibb.co/qpJK8sD/javascript.png",
+          "Level": "Advance",
+          "FillColor": "#f7df1e",
+          "FillColorText": "#000",
+          "Description": "JavaScript is a dynamic programming language that's used for web development, in web applications, for game development, and lots more. It allows you to implement dynamic features on web pages that cannot be done with only HTML and CSS."
+        },
+        {
+          "id": 1,
+          "Name": "Python",
+          "Image": "https://i.ibb.co/cg8Dp79/Python-logo.png",
+          "Level": "Intermediate",
+          "FillColor": "#376e9d",
+          "FillColorText": "#fff",
+          "Description": "Python is a general-purpose programming language with a high level of abstraction. Its design philosophy prioritises code readability and makes extensive use of indentation. Its language elements and object-oriented approach are aimed at assisting programmers in writing clear, logical code for both small and large projects."
+        },
+        {
+          "id": 2,
+          "Name": "HTML",
+          "Image": "https://i.ibb.co/YtXWPvV/html.png",
+          "Level": "Advance",
+          "FillColor": "#e34f26",
+          "FillColorText": "#fff",
+          "Description": "HTML (Hypertext Markup Language) is a computer language that is used to create most web pages and online applications. A hypertext is a piece of text that refers to other pieces of text, whereas a markup language is a set of symbols that instructs web servers about the style and structure of a document."
+        },
+        {
+          "id": 3,
+          "Name": "CSS",
+          "Image": "https://i.ibb.co/GC2VZNw/css-logo.png",
+          "Level": "Advance",
+          "FillColor": "#1572b6",
+          "FillColorText": "#fff",
+          "Description": "CSS stands for Cascading Style Sheets and it describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work as instead of writing each style in every tag, CSS can style all elements at the same time. It can control the layout of multiple web pages all at once"
+        }
+      ]
+    }
+  ],
+  "Projects": [
+    {
+      "Id": "0",
+      "Title": "2021 'Professional' Website",
+      "Description": "This was my first website that was actually thought-out okay and this was also a start for me to learn and gather design knowledge and inspirations.",
+      "Url": "https://jaylordsilverioproweb.netlify.app/",
+      "UrlTitle": "jaylordsilverioproweb",
+      "Theme": "primary",
+      "Image": "https://i.ibb.co/xDv4Q4s/project4.jpg",
+      "Date": "2021-05-28",
+      "Tags": ["Main", "HTML", "JS", "CSS"]
+    },
+    {
+      "Id": "1",
+      "Title": "Notes App",
+      "Description": "This is my first ever successful notes app built with Reactjs on the frontend and Django in the backend. The two code sources was separately hosted, one in netlify and the other one in Heroku.",
+      "Url": "https://silveriofrontendnotesapp.netlify.app/",
+      "UrlTitle": "silveriofrontendnotesapp",
+      "Theme": "dark",
+      "Image": "https://i.ibb.co/CwW8PSn/silveriofrontendnotesapp-Web-Snip.png",
+      "Date": "2022-02-10",
+      "Tags": ["Main", "React", "HTML", "JS", "CSS"]
+    },
+
+    {
+      "Id": "2",
+      "Title": "Noree's Sweet Dough & Batter",
+      "Description": "We sell varieties of cake and breads considering our clients' preferences.",
+      "Url": "https://noreessweetdoughandbatter.netlify.app/",
+      "UrlTitle": "noreessweetdoughandbatter",
+      "Theme": "noree",
+      "Image": "https://i.ibb.co/MNKBZqH/nsbd-Web-Snip.webp",
+      "Date": "2022-03-29",
+      "Tags": ["Main", "React", "HTML", "JS", "CSS"]
+    },
+
+    {
+      "Id": "3",
+      "Title": "Austate Services",
+      "Description": "At auSTATE Services we specialise in custom manufacture of Truck Bodies, Trailers, modifications for your prized items. We also specialise in the repair and restoration of heavy vehicles in addition to Trailer Hire, Sales and Servicing.",
+      "Url": "https://austateservicesau.netlify.app/",
+      "UrlTitle": "austateservicesau",
+      "Theme": "dark",
+      "Image": "https://i.ibb.co/r0zZcXs/Austate-Services-Web-Snip.webp",
+      "Date": "2021-10-19",
+      "Tags": ["HTML", "JS", "CSS"]
+    }
+  ]
+}

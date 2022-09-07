@@ -1,0 +1,19 @@
+/* Footer CSS File */
+footer {
+  margin-top: auto;
+  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+  background-color: var(--color-dark-opac);
+  text-align: center;
+  padding: 20px;
+  color: var(--color-bg-text);
+  backdrop-filter: blur(2px);
+}
+footer h2 b {
+  color: var(--color-design-1);
+}
+footer span {
+  font-family: "Montserrat", sans-serif;
+}

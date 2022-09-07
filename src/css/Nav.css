@@ -1,0 +1,166 @@
+/* Navigation CSS Styling */
+.modal#MobileNavigation {
+  backdrop-filter: blur(3px);
+}
+
+.modal#MobileNavigation .modal-content {
+  background-color: var(--color-dark-opac);
+}
+.modal#MobileNavigation .modal-header {
+  font-family: "Montserrat", sans-serif;
+  border-bottom-color: var(--color-dark-opac);
+}
+.modal#MobileNavigation .modal-title {
+  font-weight: 600;
+  color: var(--color-fixed-text-light);
+}
+.modal#MobileNavigation .modal-header .btn-close {
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg fill='#fff' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/%3E%3C/svg%3E")
+    50%/1em auto no-repeat !important;
+}
+.modal#MobileNavigation .modal-body {
+  text-align: center;
+}
+.modal#MobileNavigation .modal-body a {
+  text-decoration: none;
+  background-color: var(--color-design-1);
+  color: var(--color-design-text);
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+
+  gap: 5px;
+  margin: 3px;
+}
+.modal#MobileNavigation .modal-body a p {
+  font-size: 17px;
+  margin: 0;
+  font-weight: 500;
+}
+.modal#MobileNavigation .modal-body a:hover,
+.modal#MobileNavigation .modal-body a:focus-within {
+  background-color: var(--color-design-1-hover);
+}
+nav {
+  margin-top: 0;
+  margin-bottom: auto;
+  /* py-4 px-5 */
+  padding: 1.5rem 3rem;
+  color: var(--color-fixed-text-light);
+  max-width: var(--max-width-nav);
+  width: 85%;
+  background-color: var(--color-dark-opac);
+  backdrop-filter: blur(3px);
+  box-shadow: 0 7px 29px 4px var(--color-fixed-bg-dark-opac);
+  border-radius: 24px;
+  z-index: 99;
+  justify-content: space-between;
+}
+.light nav {
+  backdrop-filter: blur(1px);
+}
+nav li {
+  list-style: none;
+}
+nav a {
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 0 5px;
+  color: var(--color-fixed-text-light);
+  text-decoration: none;
+}
+nav a.header-title {
+  font-size: 20px;
+  gap: 0;
+}
+
+nav a svg,
+nav a > span {
+  color: var(--color-design-1);
+}
+
+nav a > p {
+  margin: 0;
+  transition: ease 0.25s;
+}
+nav a:hover {
+  color: currentColor;
+}
+.nav_content_links {
+  display: flex;
+}
+.nav_content_right li > * {
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+}
+.nav_content_right {
+  display: flex;
+  gap: 5px;
+}
+.MenuToggleWebTheme img {
+  height: 100%;
+  fill: var(--color-dark);
+}
+.nav_content_right .mobileNavModalOpener button {
+  display: none;
+}
+.menuIcon {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.menuIcon div {
+  width: 20px;
+  height: 3px;
+  border-radius: 4px;
+  background-color: var(--color-design-text);
+}
+@media only screen and (max-width: 991px) {
+  nav {
+    justify-content: space-around;
+  }
+  .nav_content_links {
+    display: none;
+  }
+  .ncv_MyProjects {
+    display: none;
+  }
+  .nav_content_right .mobileNavModalOpener button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  nav {
+    justify-content: space-between;
+    width: 95%;
+    padding: 1.25rem 2rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .modal#MobileNavigation .modal-body {
+    display: flex;
+    gap: 5px;
+  }
+  .modal#MobileNavigation .modal-body a {
+    width: 100%;
+    padding: 8px 10px;
+    display: flex;
+    justify-content: center;
+
+    gap: 0;
+    margin: 0;
+  }
+  .modal#MobileNavigation .modal-body a svg {
+    width: 20px;
+    height: 20px;
+  }
+  .modal#MobileNavigation .modal-body a p {
+    display: none;
+  }
+}

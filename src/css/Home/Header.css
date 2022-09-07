@@ -1,0 +1,263 @@
+.header-wrapper {
+  transform-style: preserve-3d;
+  width: 100%;
+  min-height: 110vh;
+  position: relative;
+  overflow: hidden;
+}
+.Home header {
+  min-height: 110vh;
+  width: 100%;
+  position: relative;
+}
+.absolute_header_content {
+  min-height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  top: 0;
+  position: absolute;
+}
+.header_bg_image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header_bg_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+  transform: rotate(180deg);
+  transition: none;
+}
+.header_wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 400px;
+}
+.header_wave img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  filter: contrast(200%);
+}
+.light .header_bg_image img {
+  opacity: 1;
+  transition: none;
+  transform: rotate(0deg);
+}
+
+.header-main-container {
+  padding-bottom: 80px;
+  min-height: 110vh;
+  width: 100%;
+  z-index: 5;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header-main-container > .row {
+  width: 85%;
+}
+.header-main-container > .row {
+  max-height: 800px;
+}
+
+.HMC_textContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.HMC_textContent h1 {
+  margin: 0;
+  font-size: 52px;
+  font-family: "Montserrat";
+  font-weight: 600;
+  position: relative;
+}
+.HMC_textContent h1::before,
+.HMC_textContent h1::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 80%;
+  border-radius: 4px;
+}
+.HMC_textContent h1::before {
+  top: 5px;
+  left: -10px;
+  background-color: var(--color-design-1);
+}
+.HMC_textContent h1::after {
+  bottom: 5px;
+  left: -20px;
+
+  background-color: var(--color-design-2);
+}
+.HMC_textContent h1 p {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  color: var(--color-design-2);
+}
+.HMC_textContent h1 i {
+  color: var(--color-design-1);
+}
+.HMC_textContent h1 span {
+  position: relative;
+  color: var(--color-dark-hover);
+}
+
+.HMC_textContent > p {
+  font-size: 18px;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+.HMC_buttons {
+  width: 100%;
+  max-width: 280px;
+  padding: 20px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-dark-opac);
+  box-shadow: var(--color-fixed-bg-dark-opac) 0px 7px 20px 0px;
+}
+
+/* Switch */
+.toggleWebTheme {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 34px;
+}
+
+.toggleWebTheme input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.toggleWebTheme .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  outline: 2px solid var(--color-dark-hover);
+  background-color: transparent;
+}
+
+.toggleWebTheme .slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--color-dark-hover);
+  transition: 0.4s;
+}
+
+.toggleWebTheme input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.toggleWebTheme .slider.round {
+  border-radius: 34px;
+}
+
+.toggleWebTheme .slider.round:before {
+  border-radius: 50%;
+}
+.wrapper_toggleWebTheme:hover .toggleWebThemeLabel {
+  color: var(--color-bg-text-opac-hover);
+}
+.wrapper_toggleWebTheme p {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  color: var(--color-bg-text-opac);
+}
+/* HMC_Logos */
+.HMC_Logos {
+  text-align: center;
+  transform-origin: center;
+  transform: rotate(0deg);
+  animation: logosRotatingWrapper 10s infinite linear;
+  user-select: none;
+}
+.HMC_Logos .col-6 {
+  padding: 0;
+}
+.HMC_Logos img {
+  object-fit: contain;
+  width: 100%;
+  transform-origin: center;
+  transform: rotate(0deg);
+  animation: logosRotating 10s infinite linear;
+  user-select: none;
+}
+.HMC_Logos img:hover {
+  animation-play-state: paused;
+}
+.HMC_Logos img:last-of-type {
+  width: 100%;
+  max-width: 160px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .HMC_textContent h1 {
+    margin: 0;
+    font-size: 36px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .HMC_Logos img:last-of-type {
+    width: 80%;
+    max-width: 120px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .HMC_textContent h1 {
+    font-size: 28px;
+  }
+  .HMC_textContent > p {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .header-main-container {
+    padding-top: 150px;
+  }
+}
+@media only screen and (max-height: 550px) {
+  .header-main-container {
+    padding-top: 150px;
+  }
+}
+@keyframes logosRotatingWrapper {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes logosRotating {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
