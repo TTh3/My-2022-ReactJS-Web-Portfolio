@@ -3,18 +3,14 @@ import EachOverviewProject from "./EachOverviewProject";
 
 const OverviewProjects = ({ projects, setprojects }) => {
   const projectSortBy = (SortType) => {
-    // console.log(SortType);
-    // if (!["Relevance", "Date Added"].includes(SortType)) return;
     if (SortType === "Relevance") {
       let Relevance = projects.sort((a, b) => parseInt(a.Id) - parseInt(b.Id));
       setprojects([...Relevance]);
-      console.log("Relevance", Relevance);
     } else {
       let DateAdded = projects.sort(
         (a, b) => new Date(a.Date) - new Date(b.Date)
       );
       setprojects([...DateAdded]);
-      console.log("Date", DateAdded);
     }
   };
   return (

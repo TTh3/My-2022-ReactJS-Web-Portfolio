@@ -9,7 +9,6 @@ import Footer from "./components/Footer/Footer";
 // Page Components
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Contact from "./components/Contact/Contact";
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -24,9 +23,6 @@ const App = () => {
     localStorage.setItem("JsilverioWebTheme", valWebTheme);
   };
   JsilverioUseLE(setWebTheme, setlangs, setprojects, setLoadingScreenToggle);
-  useEffect(() => {
-    console.log(NavAnimationStyles, projects);
-  }, [NavAnimationStyles, projects]);
   return (
     <div
       className={`app-wrapper w-100 h-100${
@@ -52,7 +48,6 @@ const App = () => {
           }
         ></Route>
         <Route path="/About" element={<About />}></Route>
-        <Route path="/Contact" element={<Contact />}></Route>
       </Routes>
       <Footer />
     </div>

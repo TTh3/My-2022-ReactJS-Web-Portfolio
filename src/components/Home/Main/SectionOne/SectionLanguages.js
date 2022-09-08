@@ -4,7 +4,6 @@ import { useState } from "react";
 const SectionLanguages = ({ langs, setlangs }) => {
   const [ToggleButtonFilterState, setToggleButtonFilterState] = useState(false);
   function SortLanguagesHandler(langs, method) {
-    console.log(langs, method);
     if (
       typeof method !== "string" ||
       !method === "ById" ||
@@ -54,7 +53,6 @@ const SectionLanguages = ({ langs, setlangs }) => {
                 className="btn btn-sm btn--color-design-1"
                 onClick={() => {
                   let SortedLangs = SortLanguagesHandler(langs, "ById");
-                  console.log("SortedLangs", SortedLangs);
                   setlangs(SortedLangs);
                 }}
               >
@@ -64,7 +62,6 @@ const SectionLanguages = ({ langs, setlangs }) => {
                 className="btn btn-sm btn--color-design-1"
                 onClick={() => {
                   let SortedLangs = SortLanguagesHandler(langs, "ByTitle");
-                  console.log("SortedLangs", SortedLangs);
                   setlangs(SortedLangs);
                 }}
               >

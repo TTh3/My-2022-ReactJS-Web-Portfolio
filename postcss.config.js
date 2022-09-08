@@ -1,4 +1,4 @@
-// const purgecss = require("@fullhuman/postcss-purgecss");
+const purgecss = require("@fullhuman/postcss-purgecss");
 module.exports = {
   plugins: [
     require("postcss-import"),
@@ -21,6 +21,6 @@ module.exports = {
       foundries: ["google"],
     }),
     require("postcss-preset-env")({ stage: 1 }),
-    // purgecss({ content: ["./**/*.html", "./**/*.js"] }),
+    purgecss({ content: ["./**/*.html", "./**/*.js"] }),
   ],
 };

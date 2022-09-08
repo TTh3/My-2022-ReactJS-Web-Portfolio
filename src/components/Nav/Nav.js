@@ -15,7 +15,6 @@ const Nav = ({ NavAnimationStyles }) => {
       // [Name of Link, Image/SVG, Url Link=null]
       ["Home", <HouseSVG />, ""],
       ["About", <PersonSVG />],
-      ["Contact", <TelephoneSVG />],
     ],
     RightNavLink: [
       // [Name of Link, Name of Unique Class, Button Group Class, Url Link=null, ScrollIntoView Id]
