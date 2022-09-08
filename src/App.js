@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import JsilverioUseLE from "./components/Global/JsilverioUseLE";
 import LoadingScreen from "./components/Global/LoadingScreen";

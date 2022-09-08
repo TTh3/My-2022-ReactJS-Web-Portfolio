@@ -5,12 +5,11 @@ import { Link } from "react-router-dom";
 import MobileNav from "./MobileNav";
 import { ReactComponent as HouseSVG } from "../../img/house.svg";
 import { ReactComponent as PersonSVG } from "../../img/person.svg";
-import { ReactComponent as TelephoneSVG } from "../../img/telephone.svg";
 
 const Nav = ({ NavAnimationStyles }) => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [navLinks, setNavLinks] = useState({
+  const [navLinks, ] = useState({
     MiddleNavLink: [
       // [Name of Link, Image/SVG, Url Link=null]
       ["Home", <HouseSVG />, ""],
