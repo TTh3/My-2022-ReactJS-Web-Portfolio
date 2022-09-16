@@ -34,7 +34,11 @@ const SectionLanguages = ({ langs, setlangs }) => {
           <h2>
             <span>#</span>Languages That I Know
           </h2>
-          <div className="HSOL_nav_btns d-flex gap-1">
+          <div
+            className={`HSOL_nav_btns d-${
+              langs.length > 1 ? "flex" : "none"
+            } gap-1`}
+          >
             <button
               className="HSOL_nav_btns_label btn btn-md btn-primary d-flex gap-2 align-items-center justify-content-center"
               onClick={() =>

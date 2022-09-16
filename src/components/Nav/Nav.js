@@ -5,15 +5,17 @@ import { Link } from "react-router-dom";
 import MobileNav from "./MobileNav";
 import { ReactComponent as HouseSVG } from "../../img/house.svg";
 import { ReactComponent as PersonSVG } from "../../img/person.svg";
+import { ReactComponent as TelephoneSVG } from "../../img/telephone.svg";
 
 const Nav = ({ NavAnimationStyles }) => {
   const location = useLocation();
   const navigate = useNavigate();
-  const [navLinks, ] = useState({
+  const [navLinks] = useState({
     MiddleNavLink: [
       // [Name of Link, Image/SVG, Url Link=null]
       ["Home", <HouseSVG />, ""],
       ["About", <PersonSVG />],
+      ["Contact", <TelephoneSVG />],
     ],
     RightNavLink: [
       // [Name of Link, Name of Unique Class, Button Group Class, Url Link=null, ScrollIntoView Id]
@@ -38,7 +40,7 @@ const Nav = ({ NavAnimationStyles }) => {
     <>
       <MobileNav navLinks={navLinks} />
       <nav
-        className={`position-fixed top-0 start-50 translate-middle-x d-flex align-items-center mt-4${
+        className={`position-absolute top-0 start-50 translate-middle-x d-flex align-items-center mt-4${
           NavAnimationStyles.length ? ` ${NavAnimationStyles}` : ""
         }`}
       >

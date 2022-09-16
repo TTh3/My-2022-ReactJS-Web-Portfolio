@@ -418,9 +418,6 @@ main {
   }
 }
 @media screen and (max-width: 800px) {
-  .HSOL_nav {
-    justify-content: space-between;
-  }
   #carouselCodeLanguages01 .LanguagesContentWrapperCarousel {
     grid-template-columns: repeat(1, 1fr);
   }

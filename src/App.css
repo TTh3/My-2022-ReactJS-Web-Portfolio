@@ -3,6 +3,7 @@
 @import "./css/Home.css";
 @import "./css/About.css";
 @import "./css/Footer.css";
+@import "./css/Contact.css";
 
 :root {
   /* Containers Sizes */
@@ -95,29 +96,32 @@ body {
   display: flex;
   flex-direction: column;
 }
-/* Loading Screen */
-.LoadingScreen{
-  width: 100%;
-  height: 100vh;
+/* Loading Starter */
+.LoadingStater {
+  overflow: hidden;
+  width: fit-content;
   position: fixed;
-  justify-content: center;
-  align-items: center;
-  background-color: var(--color-fixed-bg-text-light-opac);
-  top: 0;
+  z-index: 999;
+  bottom: 30px;
+  left: 30px;
 }
-
+.LoadingStater > * {
+  margin: 0;
+}
 .lds-ellipsis {
   display: inline-block;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 30px;
 }
 
 .lds-ellipsis div {
   position: absolute;
-  top: 33px;
-  width: 13px;
-  height: 13px;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  top: 40%;
+  transform: translateY(-50%);
   border-radius: 50%;
   background: #fff;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);

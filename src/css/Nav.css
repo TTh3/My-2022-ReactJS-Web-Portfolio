@@ -53,7 +53,7 @@ nav {
   background-color: var(--color-dark-opac);
   backdrop-filter: blur(3px);
   box-shadow: 0 7px 29px 4px var(--color-fixed-bg-dark-opac);
-  border-radius: 24px;
+  border-radius: 18px;
   z-index: 99;
   justify-content: space-between;
 }

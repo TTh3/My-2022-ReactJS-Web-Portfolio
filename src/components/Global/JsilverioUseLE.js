@@ -4,7 +4,7 @@ const JsilverioUseLE = (
   setWebTheme,
   setlangs,
   setprojects,
-  setLoadingScreenToggle
+  setLoadingStaterToggle
 ) => {
   const handleWebThemeFetch = () => {
     let JsilverioWebThemeLocalStorage = localStorage.getItem(
@@ -36,7 +36,7 @@ const JsilverioUseLE = (
         console.log("ERROR", error);
       })
       .finally(() => {
-        setLoadingScreenToggle("none");
+        setLoadingStaterToggle("none");
       });
   };
   useLayoutEffect(() => {

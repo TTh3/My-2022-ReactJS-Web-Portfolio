@@ -58,16 +58,19 @@ function HeaderBGimage({ options, webTheme, handleToggleWebTheme }) {
                   </button>
                 </ScrollIntoView>
                 <div className="wrapper_toggleWebTheme">
-                  <label className="toggleWebTheme">
+                  <label className="toggleWebTheme">    
                     <input
                       type="checkbox"
                       checked={webTheme === "" ? false : true}
                       onChange={handleToggleWebTheme}
                       label="Toggle Web Theme"
+                      tabIndex={0}
                     />
-                    <span className="slider round"></span>
+                    <span className="toggleWebThemeSlider slider round"></span>
                   </label>
-                  <p className="toggleWebThemeLabel">{webTheme.length ? "Light" : "Dark"} Mode</p>
+                  <p className="toggleWebThemeLabel">
+                    {webTheme.length ? "Light" : "Dark"} Mode
+                  </p>
                 </div>
               </div>
             </div>
