@@ -5,15 +5,16 @@ const EachLanguage = ({ Level, id, Image, Name, Description, FillColor }) => {
   const ToggleViewFullDescription = () => {
     if (Description.length < 150 || ViewFullDesc === "block")
       return <span>{Description}</span>;
-    let SlicedDescription = Description.slice(0, 150);
+    let SlicedDescription = Description.slice(0, 105)+"...";
     return (
       <span>
+        
         {SlicedDescription}
         <span
           className="ms-2 btn btn-sm btn--color-design-1"
           onClick={() => setViewFullDesc("block")}
         >
-          ...
+          Read More
         </span>
       </span>
     );

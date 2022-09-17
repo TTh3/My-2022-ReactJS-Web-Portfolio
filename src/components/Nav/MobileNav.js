@@ -12,7 +12,7 @@ const MobileNav = ({ navLinks }) => {
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title" id="MobileNavigationLabel">
-              Mobile Navigation Link
+              Mobile Menu
             </h5>
             <button
               type="button"

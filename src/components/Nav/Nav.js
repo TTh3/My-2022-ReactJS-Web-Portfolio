@@ -40,7 +40,7 @@ const Nav = ({ NavAnimationStyles }) => {
     <>
       <MobileNav navLinks={navLinks} />
       <nav
-        className={`position-absolute top-0 start-50 translate-middle-x d-flex align-items-center mt-4${
+        className={`position-fixed top-0 start-50 translate-middle-x d-flex align-items-center mt-4${
           NavAnimationStyles.length ? ` ${NavAnimationStyles}` : ""
         }`}
       >
