@@ -55,6 +55,7 @@
 }
 
 .header-main-container {
+  padding-top: 120px;
   padding-bottom: 80px;
   min-height: 110vh;
   width: 100%;
@@ -221,6 +222,9 @@
 }
 
 @media only screen and (max-width: 1200px) {
+  .header-main-container {
+    padding-top: 150px;
+  }
   .HMC_textContent h1 {
     margin: 0;
     font-size: 36px;
@@ -243,16 +247,11 @@
     font-size: 16px;
   }
 }
-@media only screen and (max-width: 930px) {
-  .header-main-container {
-    padding-top: 150px;
-  }
-}
 @media only screen and (max-height: 610px) {
   .header-main-container {
     padding-top: 150px;
   }
-}
+} 
 @keyframes logosRotatingWrapper {
   100% {
     transform: rotate(360deg);

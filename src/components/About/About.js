@@ -5,6 +5,7 @@ const About = () => {
       <img src={AboutBG} loading="lazy" type="image/png" alt="AboutBG" />
 
       <div className="About_textContent">
+        
         <h1>ABOUT ME</h1>
         <p>
           Hi my name is Jaylord Silverio. I like to be openminded and explore

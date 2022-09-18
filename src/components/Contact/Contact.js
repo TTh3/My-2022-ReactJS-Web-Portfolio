@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import VanillaTilt from "vanilla-tilt";
 import emailjs from "@emailjs/browser";
 import BG from "../../img/BG.jpg";
@@ -9,6 +9,8 @@ const options = {
   scale: 1.1,
 };
 const Contact = () => {
+  const [submitBtnText, setsubmitBtnText] = useState("Send Message");
+
   const tilt = useRef(null);
 
   useEffect(() => {
@@ -17,6 +19,8 @@ const Contact = () => {
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
+    setsubmitBtnText("Sending message...");
+
     emailjs
       .sendForm(
         process.env.REACT_APP_EMAILJSSERVICEid,
@@ -27,8 +31,13 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setTimeout(() => {
+            setsubmitBtnText("Send Message");
+          }, 1000);
+          setsubmitBtnText("Successful");
         },
         (error) => {
+          setsubmitBtnText("Error");
           setTimeout(() => {
             window.location.reload(false);
           }, 500);
@@ -168,7 +177,7 @@ const Contact = () => {
               />
             </div>
             <button className="btn btn--color-design-1 mt-2" type="submit">
-              Send Message
+              {submitBtnText}
             </button>
           </form>
         </div>
