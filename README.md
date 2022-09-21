@@ -1,8 +1,13 @@
-# Getting Started with Create React App
+# Jsilverio ReactJS Portfolio
+
+[![Jsilverio Logo](https://i.ibb.co/zH5FD2L/android-icon-96x96.png)](https://jsilverio.netlify.app/)
+
+Preview of Website: [`https://jsilverio.netlify.app/`](https://jsilverio.netlify.app/)
+
+## Description
+This website portfolio is built for me to learn as I passionately expand my knowledge with ReactJS and possibly win Dennis Ivy's September Hackathon. :smile: Best of luck to all of the participants and I thank you all for this wonderful opportunity. :hugs:
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-Preview of Website: https://jsilverio.netlify.app/
 
 ## Available Scripts
 
