@@ -1,11 +1,15 @@
 import AboutBG from "../../img/AboutBG.png";
+import ProfilePicture from "../../img/fiverr-pfp.png"
 const About = () => {
+  
   return (
     <div className="About">
       <img src={AboutBG} loading="lazy" type="image/png" alt="AboutBG" />
 
       <div className="About_textContent">
-        
+        <div className="About_profilePicture">
+          <img src={ProfilePicture}  alt="Jsilverio Profile Picture"/>
+        </div>
         <h1>ABOUT ME</h1>
         <p>
           Hi my name is Jaylord Silverio. I like to be openminded and explore
