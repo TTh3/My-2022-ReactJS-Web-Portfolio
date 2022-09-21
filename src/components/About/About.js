@@ -8,7 +8,7 @@ const About = () => {
 
       <div className="About_textContent">
         <div className="About_profilePicture">
-          <img src={ProfilePicture}  alt="Jsilverio Profile Picture"/>
+          <img src={ProfilePicture} alt="Jsilverio Profile"/>
         </div>
         <h1>ABOUT ME</h1>
         <p>
