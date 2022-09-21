@@ -56,7 +56,9 @@
   }
 
   .About p {
-    width: 80%;
     font-size: 14px;
+  }
+  .About_textContent {
+    width: 80%;
   }
 }

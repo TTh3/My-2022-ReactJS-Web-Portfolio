@@ -111,6 +111,7 @@ const OverviewProjects = ({ projects, setprojects }) => {
               <div
                 key={Id + Title + index}
                 className="overview_projs_gallery_container"
+                style={{ backgroundColor: `var(--bs-${Theme})` }}
                 onClick={() => {
                   window.open(Url, "_blank");
                 }}

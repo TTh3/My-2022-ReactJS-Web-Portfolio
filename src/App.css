@@ -30,11 +30,13 @@
   --color-design-3: #00b22d;
   --color-design-3-hover: #00db37;
   --color-design-text: #fff;
-
+  --bs--color-design-1: var(--color-design-1);
   --bs-noree: #f29c9b;
+  --bs-noree-hover: #ff908e;
+  --bs-noree-text: #fff;
 }
 .light {
-  --color-bg: rgb(248, 248, 248);
+  --color-bg: rgb(53, 42, 42);
   --color-bg-text: #000;
   --color-bg-text-opac: rgba(252, 252, 252, 0.25);
   --color-bg-text-opac-hover: rgba(252, 252, 252, 0.4);
@@ -67,12 +69,12 @@
 }
 /* Project Colors */
 .btn-noree {
-  background-color: #f29c9b;
-  color: #fff;
+  background-color: var(--bs-noree);
+  color: var(--bs-noree-text);
 }
 .btn-noree:hover {
-  background-color: #ff908e;
-  color: #fff;
+  background-color: var(--bs-noree-hover);
+  color: var(--bs-noree-text);
 }
 /* Global CSS */
 * {
